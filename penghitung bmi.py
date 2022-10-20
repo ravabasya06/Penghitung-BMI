@@ -1,11 +1,11 @@
 def ulang():
 
-    bb = int(input("Masukkan berat badan anda (kg) : "))
-    tinggi = int(input("Masukkan tinggi badan anda (cm) : "))
-    tinggiM = tinggi*0.01
-    bmi = bb/(tinggiM*tinggiM)
-    idealL = (tinggi - 100)-(tinggi - 100)*0.1
-    idealP = (tinggi - 100)-(tinggi - 100)*0.15
+    berat = int(input("Masukkan berat badan anda (kg) : "))
+    tinggiCM = int(input("Masukkan tinggi badan anda (cm) : "))
+    tinggiM = tinggiCM*0.01
+    bmi = berat/(tinggiM*tinggiM)
+    idealL = (tinggiCM - 100)-(tinggiCM - 100)*0.1
+    idealP = (tinggiCM - 100)-(tinggiCM - 100)*0.15
     print("BMI anda adalah : "+str(bmi))
     if bmi > 23:
         print("Anda kelebihan berat badan, berat badan yang ideal untuk anda adalah : ")
