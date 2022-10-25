@@ -6,12 +6,13 @@ def ulang():
     bmi = berat/(tinggiM*tinggiM)
     idealL = (tinggiCM - 100)-(tinggiCM - 100)*0.1
     idealP = (tinggiCM - 100)-(tinggiCM - 100)*0.15
-    print("BMI anda adalah : "+str(bmi))
-    if bmi > 23:
+    bmiR = round(bmi, 2)
+    print("BMI anda adalah : "+str(bmiR))
+    if bmiR > 23:
         print("Anda kelebihan berat badan, berat badan yang ideal untuk anda adalah : ")
         print("Laki-laki : "+str(idealL)+" kg")
         print("Perempuan : "+str(idealP)+" kg")
-    elif bmi < 18.5:
+    elif bmiR < 18.5:
         print("Anda kekurangan berat badan, berat badan yang ideal untuk anda adalah : ")
         print("Laki-laki : "+str(idealL)+" kg")
         print("Perempuan : "+str(idealP)+" kg")
